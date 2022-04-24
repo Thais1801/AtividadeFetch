@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fetch</title>
+    <script src="fetch.js" defer></script>
+    <style>
+      td, th{
+    border: 1px solid rgb(216, 109, 193);
+    text-align: left;
+    padding: 2px;
+}
+      th{
+    background-color: rgb(216, 109, 193);
+    font-weight: bold;
+}
+      td{
+    background-color: antiquewhite;
+}
+      body{
+    background-color: rgb(245, 229, 247);
+}
+      </style>
+  </head>
+  <body>
+    <h1>Fetch</h1>
+    <table id="tabela">
+      <tr>
+        <th>Nº</th>
+        <th>NOME</th>
+        <th>IDADE</th>
+      </tr>
+
+    </table>
+    <p>
+      Clique no botão para carregar a lista:
+      <button id="btFetch" onclick="fetchStarWarsPeople()">Executar o Fetch</button>
+    </p>
+    <p>
+      <button id="btProxPag" onclick="fetchProxPag()">Próxima Página</button>
+    </p>
+    <table id="tabelaFetch">
+      <tr>
+        <th>NOME</th>
+        <th>NASCIMENTO</th>
+        <th>ALTURA</th>
+        <th>PESO</th>
+        <th>CABELO</th>
+        <th>OLHOS</th>
+        <th>GENERO</th>
+      </tr>
+    </table>
+  </body>
+</html>
